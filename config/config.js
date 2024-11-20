@@ -4,7 +4,7 @@ import { faAppStore, faGithub, faGooglePlay } from '@fortawesome/free-brands-svg
 import { } from '@fortawesome/free-solid-svg-icons';
 
 export const navigation = {
-  name: "Hashir",
+  name: "Haijiang",
   links: [
     {
       title: "About",
@@ -24,13 +24,13 @@ export const navigation = {
     },
     {
       title: "Blog",
-      link: "https://medium.com/@hashirshoaeb",
+      link: "https://medium.com/",
     }
   ],
 }
 export const intro = {
-  title: "Hey, I'm Hashir",
-  description: "A Computer Engineer creating mobile apps and static websites.",
+  title: "Hey, I'm Haijiang",
+  description: "A third-year PhD student at the University of Warwick.",
   image: profile.src,
   buttons: [
     {
@@ -40,18 +40,16 @@ export const intro = {
     },
     {
       title: "Resume",
-      link: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
+      link: "https://drive.google.com/file/d/1PbCfOan4GACZHemWUQZ1PwE-jYdUY3vS/view?usp=sharing",
       isPrimary: false,
     },
   ],
 }
 
 export const about = {
-  title: "Who I am",
+  title: "Biography",
   description: [
-    "I graduated from National University of Sciences and Technology (NUST) in 2020 with a degree in Computer Engineering. I kick started my professional career as a mobile application developer working remotely for a UK based startup — Lessgo.",
-    "The tech industry is ever-evolving and I love being able to grow with it, while continually solidifying the fundamentals. I opensource my code from a place of empathy - for future developers, teammates, users, and with accessibility in mind. I also love joining communities, helping and mentoring new developers, and supporting organizations to promote diversity in tech. I’m sharing my programming journey on instagram, helping people who are just getting into the space of programming.",
-    "When I’m not programming, I focus on my hobbies which are: diary writing, doodling, meeting people and growing my network.",
+    "I graduated from ...",
   ],
 }
 
@@ -80,11 +78,11 @@ export const projects = {
       icons: [
         {
           icon: faAppStore,
-          link: "https://apps.apple.com/us/app/starbook-journal-ai-diary/id1552418289",
+          link: "https://apps/id1552418289",
         },
         {
           icon: faGithub,
-          link: "https://github.com/hashirshoaeb/star_book",
+          link: "https://githr_book",
         },
       ]
     },
@@ -94,11 +92,11 @@ export const projects = {
       icons: [
         {
           icon: faAppStore,
-          link: "https://apps.apple.com/us/app/qurantalk/id1563425149",
+          link: "https://apps.id1563425149",
         },
         {
           icon: faGooglePlay,
-          link: "https://play.google.com/store/apps/details?id=com.ayahemotion.quran_talk",
+          link: "https://play.goquran_talk",
         },
       ]
     },
@@ -108,7 +106,7 @@ export const projects = {
       icons: [
         {
           icon: faGithub,
-          link: "https://github.com/hashirshoaeb/portfolio",
+          link: "https://github.com/haijiangyan/portfolio",
         },
       ]
     },
@@ -121,12 +119,12 @@ export const contact = {
   buttons: [
     {
       title: "Email Me",
-      link: "mailto:hashirshoaeb@gmail.com",
+      link: "mailto:haijiang.r.yan@gmail.com",
       isPrimary: true,
     },
     {
       title: "Schedule Meeting",
-      link: "https://topmate.io/hashirshoaeb",
+      link: "https://",
       isPrimary: false,
     },
   ]
@@ -135,35 +133,35 @@ export const contact = {
 // SEARCH ENGINE 
 export const SEO = {
   // 50 - 60 char  
-  title: "Hashir Shoaib | Computer Engineer | Flutter | Reactjs developer",
-  description: "I create mobile apps and static websites. I graduated from National University of Sciences and Technology (NUST) in 2020 with a degree in Computer Engineering.",
+  title: "Haijiang Yan | PhD Student",
+  description: "I create AIOM. I graduated from.",
   image: profile.src,
 }
 
 export const links = {
   image: profile.src,
-  title: "@hashirshoaeb",
-  description: "Computer Engineer | Flutter | Reactjs Developer",
+  title: "@haijiangyan",
+  description: "PhD | Cognitive Science | Artificial Intelligence",
   cards: [
     {
       title: "My website",
-      link: "https://hashirshoaeb.com/",
+      link: "https:///",
     },
     {
       title: "QuranTalk App",
-      link: "https://www.qurantalk.app/",
+      link: "https:///",
     },
     {
       title: "StarBook App",
-      link: "https://starbook.dev/",
+      link: "https:///",
     },
     {
       title: "My GitHub",
-      link: "https://github.com/hashirshoaeb/",
+      link: "https:///",
     },
     {
       title: "My LinkedIn",
-      link: "https://www.linkedin.com/in/hashirshoaeb/",
+      link: "https:///",
     },
   ]
 }
