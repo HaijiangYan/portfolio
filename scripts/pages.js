@@ -13,7 +13,7 @@ console.log(`Deploying to ${repoURL} branch ${branch}`);
  * [username] is the GitHub username of the user who owns the repo
  * [repoURL] - The URL of the GitHub repository to deploy to
  * [branch] - The branch to deploy to
- * [build_path] - The path to the built site
+ * [build_path] - The path to the built site, 
  * 
  * node scripts/pages.js <username> <branch>
  * i.e.
