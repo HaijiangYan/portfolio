@@ -4,12 +4,49 @@ import Link from 'next/link'
 
 export const Skills = ({ title, cards }) => {
 	return (
-		<div id="skills" className="bg-secondary py-5 px-5">
+		<div id="skills" className="bg-white py-5 px-5">
 			<div className="container">
 				<h1 className="text-primary fw-bold">{title}</h1>
 				<div className="d-flex flex-row flex-wrap justify-content-center">
 					{cards.map((value, index) => (
+						<Card_skills
+							key={index}
+							icon={value.icon}
+							name={value.name} />
+					))}
+				</div>
+			</div>
+		</div>
+	);
+}
+
+export const Interests = ({ title, cards }) => {
+	return (
+		<div id="interests" className="bg-primary py-5 px-5">
+			<div className="container">
+				<h1 className="text-light fw-bold">{title}</h1>
+				<div className="d-flex flex-row flex-wrap justify-content-center">
+					{cards.map((value, index) => (
 						<Card
+							key={index}
+							title={value.title}
+							description={value.description}
+							link={value.link} />
+					))}
+				</div>
+			</div>
+		</div>
+	);
+}
+
+export const Outputs = ({ title, cards }) => {
+	return (
+		<div id="outputs" className="bg-secondary py-5 px-5">
+			<div className="container">
+				<h1 className="text-primary fw-bold">{title}</h1>
+				<div className="d-flex flex-row flex-wrap justify-content-center">
+					{cards.map((value, index) => (
+						<Card_publication
 							key={index}
 							title={value.title}
 							description={value.description}
@@ -25,7 +62,7 @@ export const Projects = ({ title, cards }) => {
 	return (
 		<div id="projects" className="bg-primary py-5 px-5">
 			<div className="container">
-				<h1 className="text-light fw-bold">Projects</h1>
+				<h1 className="text-light fw-bold">{title}</h1>
 				<div className="d-flex flex-row flex-wrap justify-content-center">
 					{cards.map((value, index) => (
 						<Card
@@ -46,8 +83,29 @@ export const Projects = ({ title, cards }) => {
 export const Card = ({ title, description, icons }) => {
 	return (
 		<div className="card py-3 px-3 mx-sm-4 my-4 card-work" style={{ width: "20rem" }}>
-			<h4 className="text-primary">{title}</h4>
+			<h4 className="text-primary fw-bold">{title}</h4>
 			<p className="text-dark">{description}</p>
+			<div className="text-end">
+				{icons && icons.map((value, index) => (
+					<Link key={index} href={value.link}>
+						<a target="_blank" rel="noreferrer">
+							<FontAwesomeIcon className="icon-style mx-1 iconshadow" icon={value.icon} size="2x" />
+						</a>
+					</Link>
+				))}
+			</div>
+		</div>
+	);
+}
+
+export const Card_publication = ({ title, description, icons }) => {
+	return (
+		<div className="card py-3 px-3 mx-sm-4 my-4 card-work" style={{ width: "70vw" }}>
+			<h4 className="text-primary fw-bold">{title}</h4>
+			{description.map((value, index) => (
+				<p key={index} className="text-dark indented">{value.content}</p>
+			))
+			}
 			<div className="text-end">
 				{icons && icons.map((value, index) => (
 					<Link key={index} href={value.link}>
@@ -56,6 +114,20 @@ export const Card = ({ title, description, icons }) => {
 						</a>
 					</Link>
 				))}
+			</div>
+		</div >
+	);
+}
+
+export const Card_skills = ({ icon, name }) => {
+	return (
+		<div className="card py-3 px-3 mx-sm-4 my-4 card-work" style={{ width: "6rem", height: "5rem", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", textAlign: "center" }}>
+			<p className="text-dark"></p>
+			<a target="_blank" rel="noreferrer">
+				<FontAwesomeIcon className="icon-style mx-1" icon={icon} size="2x" />
+			</a>
+			<p className="text-dark">{name}</p>
+			<div className="text-end">
 			</div>
 		</div>
 	);

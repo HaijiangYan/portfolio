@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const Contact = ({ title, description, buttons }) => {
 	return (
-		<div id="contact" className="bg-white py-5 px-5">
+		<div id="contact" className="bg-secondary py-5 px-5">
 			<div className="container">
 				<h1 className="text-primary fw-bold">{title}</h1>
 				<div className="px-sm-5">
@@ -32,15 +32,15 @@ export const Contact = ({ title, description, buttons }) => {
 
 export const Footer = () => {
 	return (
-		<footer className="bg-secondary text-center py-2 px-5">
-			<div className="container text-muted">
+		<footer className="bg-primary text-center py-2 px-5">
+			<div className="container text-light">
 				<small>&copy; 2024 {" "}
 					<Link href="https://github.com/haijiangyan">
-						<a>haijiangyan</a>
+						<a className="text-light react_black">haijiangyan</a>
 					</Link>
 					. Open sourced under {" "}
 					<Link href="https://github.com/haijiangyan/portfolio/blob/main/LICENSE">
-						<a>MIT</a>
+						<a className="text-light react_black">MIT</a>
 					</Link>
 					{" "} License
 				</small>

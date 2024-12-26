@@ -8,17 +8,18 @@
 
 // 2. Include any default variable overrides here
 
-// $primary-background: #FFFFFF;
-// $secondary-background: #F7F7F7;
-// $tertiary-background: #365B6D;
+$primary-background: #FFFFFF;
+$secondary-background: #F7F7F7;
+$tertiary-background: #4575b4;
 
-// $primary-font: #000000;
-// $secondary-font: #F7F7F7;
-// $tertiary-font: #365B6D;
-// $inverted-font: #FFFFFF;
+$primary-font: #000000;
+$secondary-font: #F7F7F7;
+$tertiary-font: #4575b4;
+$inverted-font: #FFFFFF;
 
 // bootstrap overrides 
-$primary: #365B6D;
+$primary: #4575b4;
+$primary_hover: #486598;
 $secondary: #F7F7F7;
 $light: #FFFFFF;
 
@@ -138,6 +139,8 @@ a {
 
 .card-work:hover {
   box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+  // transition: font-weight 0.2s ease;
+  // font-weight: bolder;
 }
 
 .card-image {
@@ -149,4 +152,29 @@ a {
 .card-image:hover {
   transform: translate(-0.5rem, -0.5rem);
   box-shadow: 2rem 2rem $primary;
+}
+
+.navbar-brand {
+  font-family: $font-family-sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: #000000;
+}
+
+.navbar-brand:hover {
+  color: $primary;
+}
+
+.indented {
+  text-indent: 30px;
+}
+
+.iconshadow:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.3));
+  transition: all 0.3s ease;
+}
+
+.react_black:hover {
+  text-decoration: underline;
 }
